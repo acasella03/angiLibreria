@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="angiLibreria">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/angiLibreria.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
