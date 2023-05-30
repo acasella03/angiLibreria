@@ -1,20 +1,31 @@
 package com.angi.datos;
 
-import javax.swing.JOptionPane;
-
 public class ValidarNumero {
-    
+
     /**
-     * Método que valida la nota de un alumno comprendida del 0 al 10 ambos incluídos
-     * @param nota de tipo int solicitada por ventana al usuario
-     * @return la nota de tipo int introducida por el usuario
+     * Método que valida si un número está comprendido entre el 0 al 10 ambos
+     * incluídos
+     *
+     * @param numero de tipo int solicitada por ventana al usuario
+     * @return true si está entre el cero y el 10, false si no lo está.
      */
-    
-    public static int validarNota(int nota) {
-        do {
-            nota = Integer.parseInt(JOptionPane.showInputDialog("teclea nota entre 0 y 10"));
-        } while (nota < 0 || nota > 10);
-        return nota;
+    public static boolean validarNumeroEnRango(int numero) {
+        if (numero >= 0 && numero <= 10) {
+            return true; // Está en el rango
+        } else {
+            return false; // No está en el rango
+        }
     }
-    
+
+    /**
+     *Método que valida si un número es mayor que 1
+     * @param numero de tipo int solicitada por ventana al usuario
+     * @return true si es mayor que cero, false si es menor que cero
+     */
+    public static boolean validarNumeroPositivo(int numero) {
+        if (numero >= 0) {
+            return true;
+        }
+        return false;
+    }
 }

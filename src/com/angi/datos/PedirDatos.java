@@ -36,7 +36,7 @@ public class PedirDatos {
         return Float.parseFloat(JOptionPane.showInputDialog(mensaje));
     }
     
-    public static GregorianCalendar pedirFecha() {
+    /*public static GregorianCalendar pedirFecha() {
         // crea un objeto Scanner para leer la entrada del usuario desde la consola
         Scanner scanner = new Scanner(System.in);
         // solicita al usuario que ingrese la fecha en formato "dd/mm/yyyy"
@@ -51,5 +51,5 @@ public class PedirDatos {
         // crea un objeto GregorianCalendar a partir de los valores ingresados
         GregorianCalendar fecha = new GregorianCalendar(ano, mes, dia);
         return fecha;
-    }
+    }*/
 }
